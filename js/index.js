@@ -27,3 +27,13 @@ document.getElementById('btn-card-3').addEventListener("click",function(){
   const geometryType = document.getElementById('geometry3-type').innerText;
   displayData(geometryType, geometryOperation);
 })
+
+// card fourth Dom manipulation
+document.getElementById('btn-card-4').addEventListener("click",function(){
+  serial+=1;
+  const input1Value = firstInputFieldValue('first-input4-field')
+  const input2Value = secondInputFieldValue('second-input4-field')
+  const geometryOperation = input1Value*input2Value;
+  const geometryType = document.getElementById('geometry4-type').innerText;
+  displayData(geometryType, geometryOperation);
+})
