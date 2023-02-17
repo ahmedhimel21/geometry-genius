@@ -17,3 +17,13 @@ document.getElementById('btn-card-2').addEventListener("click",function(){
   const geometryType = document.getElementById('geometry2-type').innerText;
   displayData(geometryType, geometryOperation);
 })
+
+// card three Dom manipulation
+document.getElementById('btn-card-3').addEventListener("click",function(){
+  serial+=1;
+  const input1Value = firstInputFieldValue('first-input3-field')
+  const input2Value = secondInputFieldValue('second-input3-field')
+  const geometryOperation = input1Value*input2Value;
+  const geometryType = document.getElementById('geometry3-type').innerText;
+  displayData(geometryType, geometryOperation);
+})
