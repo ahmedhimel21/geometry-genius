@@ -23,7 +23,7 @@ function displayData(geometryType, geometryOperation) {
     <td>${geometryType}</td>
     <td>${geometryOperation}</td>
     <td>
-    <button class="btn btn-sm btn-info">Convert to m^2</button>
+    <button class="btn btn-sm text-white btn-info">Convert to m^2</button>
     </td>
     
   `;
