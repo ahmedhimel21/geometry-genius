@@ -63,3 +63,8 @@ document.getElementById('btn-card-6').addEventListener("click",function(){
   const geometryType = document.getElementById('geometry6-type').innerText;
   displayData(geometryType, geometryOperation);
 })
+
+// blog button Dom manipulation
+document.getElementById('btn-blog').addEventListener("click",function(){
+  window.location.href = 'blog.html'
+})
