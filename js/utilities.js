@@ -1,4 +1,5 @@
 let serial = 0;
+// get first input value function
 function firstInputFieldValue(firstInputFieldId){
   const firstInputField = document.getElementById(firstInputFieldId);
   const firstInputString = firstInputField.value;
@@ -6,7 +7,7 @@ function firstInputFieldValue(firstInputFieldId){
   firstInputField.value = '';
   return firstInputValue;  
 }
-
+// get second input value function
 function secondInputFieldValue(secondInputFieldId){
   const secondInputField = document.getElementById(secondInputFieldId);
   const secondInputString = secondInputField.value;
@@ -15,7 +16,7 @@ function secondInputFieldValue(secondInputFieldId){
   return secondInputValue;
 }
 
-
+// display data function
 function displayData(geometryType, geometryOperation) {
   const container = document.getElementById("table-container");
   const tr = document.createElement("tr");
@@ -33,7 +34,7 @@ function displayData(geometryType, geometryOperation) {
   
 }
 
-// random bg change onmouseover
+// random bg change onmouseover function
 function randColor(id){
   const element = document.getElementById(id);
   let bgColor = "#" + Math.random().toString(16).slice(2,8);
