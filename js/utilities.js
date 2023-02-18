@@ -34,19 +34,11 @@ function displayData(geometryType, geometryOperation) {
 }
 
 // random bg change onmouseover
-function rg(m,n){
-  return Math.floor(Math.random()*(n-m+1))+m;
+function randColor(id){
+  const element = document.getElementById(id);
+  let bgColor = "#" + Math.random().toString(16).slice(2,8);
+  element.style.backgroundColor = bgColor;
 }
-function hex(i){
-  return i.toString(16);
-}
-function randColor(){
-  return '#' + hex(rg(1,15))+hex(rg(1,15))+hex(rg(1,15))+hex(rg(1,15))+hex(rg(1,15))+hex(rg(1,15));
-}
-
-$(".subContent").mouseover(function(){
-  $(this).css("background-color", randColor())
-});
 
 
 
