@@ -23,8 +23,7 @@ function displayData(geometryType, geometryOperation) {
   tr.innerHTML = `
     <td>${serial}</td>
     <td>${geometryType}</td>
-    <td>${geometryOperation}</td>
-    <td>cm<sup>2</sup></td>
+    <td>${geometryOperation} cm<sup>2</sup></td>
     <td>
     <button class="btn btn-sm text-white btn-info">Convert to m<sup>2</sum></button>
     </td>
